@@ -47,6 +47,7 @@ class InstallerService : Service() {
         return null
     }
 
+    @Suppress("CANNOT_WEAKEN_ACCESS_PRIVILEGE", "VIRTUAL_MEMBER_HIDDEN")
     private fun setForeground(enable: Boolean) {
         if (!enable) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
@@ -158,6 +159,7 @@ class InstallerService : Service() {
         }
     }
 
+    @Suppress("CANNOT_WEAKEN_ACCESS_PRIVILEGE", "VIRTUAL_MEMBER_HIDDEN")
     private fun destroy() {
         stopSelf()
     }
