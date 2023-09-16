@@ -101,7 +101,7 @@ fun InstallPrepareDialog(
         installer, viewModel
     )
     var showChips by remember {
-        mutableStateOf(false)
+        mutableStateOf(true)
     }
     return InstallInfoDialog(installer, viewModel) {
         showChips = !showChips
